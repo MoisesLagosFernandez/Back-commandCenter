@@ -10,13 +10,15 @@ CommanCenter es una aplicación de gestión de incidentes que permite a los usua
 - MySQL
 - Lombok
 - Maven
+- Security
+- jsonwebtoken
 
 ## Configuración del Proyecto
 
 1. Clona el repositorio:
 
 ```bash
-git clone <URL del Repositorio>
+git clone https://github.com/MoisesLagosFernandez/Back-commandCenter.git
 ```
 
 2. Configura la base de datos MySQL en src/main/resources/application.properties. Asegúrate de proporcionar la URL de tu base de datos, nombre de usuario y contraseña. Utiliza la siguiente configuración como referencia:
@@ -46,8 +48,9 @@ mvn spring-boot:run
 4. Accede a la API a través de http://localhost:4000/api.
 
 ## Endpoints de la API
-La API proporciona endpoints para interactuar con las siguientes entidades:
+La API proporciona endpoints para interactuar con:
 
+- Login
 - Roles
 - Departamentos
 - Usuarios
@@ -66,3 +69,10 @@ La API proporciona endpoints para interactuar con las siguientes entidades:
 ##  Autor
 
 Moises Lagos Fernandez
+
+##  Faltante Y NOTAS
+
+- Autenticacion del JWT
+- PASAR A ENUM Tipos de Ticket
+- Pasar secret key a variable de entorno en JWTSERVICE
+
